@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       menuList: {},
-      targetUrl: "",
+      targetUrl: "http://localhost:8080",
     };
   },
   created() {
@@ -41,7 +41,7 @@ export default {
         {
           main: {
             name: "대시보드",
-            url: "http://192.168.0.183:16000/page/dashBoard",
+            url: "http://localhost:8080/dashBoard",
           },
           sub: [],
         },
@@ -64,14 +64,14 @@ export default {
         {
           main: {
             name: "소스 시스템",
-            url: "http://192.168.0.183:16000/page/source/scheduler/history",
+            url: "http://localhost:8080/source",
           },
           sub: [],
         },
         {
           main: {
             name: "타겟 시스템",
-            url: "http://192.168.0.183:16000/page/target/scheduler/history",
+            url: "http://localhost:8080/target",
           },
           sub: [],
         },
